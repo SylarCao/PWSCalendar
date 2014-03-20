@@ -10,4 +10,6 @@
 
 @interface PWSCalendarViewController : UIViewController
 
++ (UIButton*) GetButtonWithTitle:(NSString*)_pTitle;
+
 @end

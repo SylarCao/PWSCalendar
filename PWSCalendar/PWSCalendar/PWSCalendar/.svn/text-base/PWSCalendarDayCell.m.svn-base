@@ -8,6 +8,7 @@
 ////////////////////////////////////////////////////////////////////////
 #import "PWSCalendarDayCell.h"
 #import "PWSHelper.h"
+#import "WFUtilities.h"
 ////////////////////////////////////////////////////////////////////////
 const NSString* PWSCalendarDayCellId = @"PWSCalendarDayCellId";
 ////////////////////////////////////////////////////////////////////////
@@ -36,6 +37,7 @@ const NSString* PWSCalendarDayCellId = @"PWSCalendarDayCellId";
     [m_date setFrame:self.bounds];
     [m_date setText:@""];
     [m_date setTextAlignment:NSTextAlignmentCenter];
+    [m_date setFont:[WFUtilities applicationDefaultFont]];
     [self addSubview:m_date];
 }
 

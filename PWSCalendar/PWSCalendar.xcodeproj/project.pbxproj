@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B685AA3D18DAD415007812ED /* PWSCalendarSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B685AA3218DAD415007812ED /* PWSCalendarSegmentView.m */; };
+		B685AA3E18DAD415007812ED /* PWSCalendarViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B685AA3418DAD415007812ED /* PWSCalendarViewFlowLayout.m */; };
+		B685AA3F18DAD415007812ED /* PWSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B685AA3618DAD415007812ED /* PWSHelper.m */; };
+		B685AA4018DAD415007812ED /* PWSCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B685AA3818DAD415007812ED /* PWSCalendarDayCell.m */; };
+		B685AA4118DAD415007812ED /* PWSCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B685AA3A18DAD415007812ED /* PWSCalendarView.m */; };
+		B685AA4218DAD415007812ED /* PWSCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B685AA3C18DAD415007812ED /* PWSCalendarViewCell.m */; };
+		B6B5E64218DAE2AF008F6745 /* PWSDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5E64118DAE2AF008F6745 /* PWSDefaultViewController.m */; };
+		B6B5E64518DAE4BD008F6745 /* PWSCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5E64418DAE4BD008F6745 /* PWSCustomViewController.m */; };
+		B6B5E64818DAE554008F6745 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = B6B5E64718DAE554008F6745 /* img1.png */; };
 		B6E3470E18D2BDB7009507EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E3470D18D2BDB7009507EC /* Foundation.framework */; };
 		B6E3471018D2BDB7009507EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E3470F18D2BDB7009507EC /* CoreGraphics.framework */; };
 		B6E3471218D2BDB7009507EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E3471118D2BDB7009507EC /* UIKit.framework */; };
@@ -15,15 +24,26 @@
 		B6E3471E18D2BDB7009507EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3471D18D2BDB7009507EC /* AppDelegate.m */; };
 		B6E3472618D2BDB7009507EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E3472518D2BDB7009507EC /* Images.xcassets */; };
 		B6E3474418D2BDFB009507EC /* PWSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3474318D2BDFB009507EC /* PWSCalendarViewController.m */; };
-		B6E3474818D2BEC8009507EC /* PWSCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3474718D2BEC8009507EC /* PWSCalendarView.m */; };
-		B6E3474C18D2BEF7009507EC /* PWSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3474B18D2BEF7009507EC /* PWSHelper.m */; };
-		B6E3474F18D2BF7D009507EC /* PWSCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3474E18D2BF7D009507EC /* PWSCalendarViewCell.m */; };
-		B6E3475218D2BF93009507EC /* PWSCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3475118D2BF93009507EC /* PWSCalendarDayCell.m */; };
-		B6E3475518D2BFBF009507EC /* PWSCalendarViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3475418D2BFBF009507EC /* PWSCalendarViewFlowLayout.m */; };
-		B6E3475B18D2C32D009507EC /* PWSCalendarSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E3475A18D2C32D009507EC /* PWSCalendarSegmentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B685AA3118DAD415007812ED /* PWSCalendarSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarSegmentView.h; sourceTree = "<group>"; };
+		B685AA3218DAD415007812ED /* PWSCalendarSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarSegmentView.m; sourceTree = "<group>"; };
+		B685AA3318DAD415007812ED /* PWSCalendarViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarViewFlowLayout.h; sourceTree = "<group>"; };
+		B685AA3418DAD415007812ED /* PWSCalendarViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarViewFlowLayout.m; sourceTree = "<group>"; };
+		B685AA3518DAD415007812ED /* PWSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSHelper.h; sourceTree = "<group>"; };
+		B685AA3618DAD415007812ED /* PWSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSHelper.m; sourceTree = "<group>"; };
+		B685AA3718DAD415007812ED /* PWSCalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarDayCell.h; sourceTree = "<group>"; };
+		B685AA3818DAD415007812ED /* PWSCalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarDayCell.m; sourceTree = "<group>"; };
+		B685AA3918DAD415007812ED /* PWSCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarView.h; sourceTree = "<group>"; };
+		B685AA3A18DAD415007812ED /* PWSCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarView.m; sourceTree = "<group>"; };
+		B685AA3B18DAD415007812ED /* PWSCalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarViewCell.h; sourceTree = "<group>"; };
+		B685AA3C18DAD415007812ED /* PWSCalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarViewCell.m; sourceTree = "<group>"; };
+		B6B5E64018DAE2AF008F6745 /* PWSDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSDefaultViewController.h; sourceTree = "<group>"; };
+		B6B5E64118DAE2AF008F6745 /* PWSDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSDefaultViewController.m; sourceTree = "<group>"; };
+		B6B5E64318DAE4BD008F6745 /* PWSCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCustomViewController.h; sourceTree = "<group>"; };
+		B6B5E64418DAE4BD008F6745 /* PWSCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCustomViewController.m; sourceTree = "<group>"; };
+		B6B5E64718DAE554008F6745 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 		B6E3470A18D2BDB7009507EC /* PWSCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWSCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E3470D18D2BDB7009507EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6E3470F18D2BDB7009507EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -37,18 +57,6 @@
 		B6E3472518D2BDB7009507EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6E3474218D2BDFB009507EC /* PWSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarViewController.h; sourceTree = "<group>"; };
 		B6E3474318D2BDFB009507EC /* PWSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarViewController.m; sourceTree = "<group>"; };
-		B6E3474618D2BEC8009507EC /* PWSCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarView.h; sourceTree = "<group>"; };
-		B6E3474718D2BEC8009507EC /* PWSCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarView.m; sourceTree = "<group>"; };
-		B6E3474A18D2BEF7009507EC /* PWSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSHelper.h; sourceTree = "<group>"; };
-		B6E3474B18D2BEF7009507EC /* PWSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSHelper.m; sourceTree = "<group>"; };
-		B6E3474D18D2BF7D009507EC /* PWSCalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarViewCell.h; sourceTree = "<group>"; };
-		B6E3474E18D2BF7D009507EC /* PWSCalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarViewCell.m; sourceTree = "<group>"; };
-		B6E3475018D2BF93009507EC /* PWSCalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarDayCell.h; sourceTree = "<group>"; };
-		B6E3475118D2BF93009507EC /* PWSCalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarDayCell.m; sourceTree = "<group>"; };
-		B6E3475318D2BFBF009507EC /* PWSCalendarViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarViewFlowLayout.h; sourceTree = "<group>"; };
-		B6E3475418D2BFBF009507EC /* PWSCalendarViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarViewFlowLayout.m; sourceTree = "<group>"; };
-		B6E3475918D2C32D009507EC /* PWSCalendarSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSCalendarSegmentView.h; sourceTree = "<group>"; };
-		B6E3475A18D2C32D009507EC /* PWSCalendarSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSCalendarSegmentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B685AA2F18DAD415007812ED /* PWSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				B685AA3018DAD415007812ED /* Helper */,
+				B685AA3718DAD415007812ED /* PWSCalendarDayCell.h */,
+				B685AA3818DAD415007812ED /* PWSCalendarDayCell.m */,
+				B685AA3918DAD415007812ED /* PWSCalendarView.h */,
+				B685AA3A18DAD415007812ED /* PWSCalendarView.m */,
+				B685AA3B18DAD415007812ED /* PWSCalendarViewCell.h */,
+				B685AA3C18DAD415007812ED /* PWSCalendarViewCell.m */,
+			);
+			path = PWSCalendar;
+			sourceTree = "<group>";
+		};
+		B685AA3018DAD415007812ED /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B685AA3118DAD415007812ED /* PWSCalendarSegmentView.h */,
+				B685AA3218DAD415007812ED /* PWSCalendarSegmentView.m */,
+				B685AA3318DAD415007812ED /* PWSCalendarViewFlowLayout.h */,
+				B685AA3418DAD415007812ED /* PWSCalendarViewFlowLayout.m */,
+				B685AA3518DAD415007812ED /* PWSHelper.h */,
+				B685AA3618DAD415007812ED /* PWSHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B6B5E63F18DAE292008F6745 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				B6B5E64018DAE2AF008F6745 /* PWSDefaultViewController.h */,
+				B6B5E64118DAE2AF008F6745 /* PWSDefaultViewController.m */,
+				B6B5E64318DAE4BD008F6745 /* PWSCustomViewController.h */,
+				B6B5E64418DAE4BD008F6745 /* PWSCustomViewController.m */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		B6B5E64618DAE554008F6745 /* Rescource */ = {
+			isa = PBXGroup;
+			children = (
+				B6B5E64718DAE554008F6745 /* img1.png */,
+			);
+			path = Rescource;
+			sourceTree = "<group>";
+		};
 		B6E3470118D2BDB7009507EC = {
 			isa = PBXGroup;
 			children = (
@@ -95,12 +149,14 @@
 		B6E3471318D2BDB7009507EC /* PWSCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				B6E3474518D2BE9C009507EC /* PWSCalendar */,
+				B685AA2F18DAD415007812ED /* PWSCalendar */,
+				B6B5E63F18DAE292008F6745 /* viewcontrollers */,
 				B6E3471C18D2BDB7009507EC /* AppDelegate.h */,
 				B6E3471D18D2BDB7009507EC /* AppDelegate.m */,
 				B6E3474218D2BDFB009507EC /* PWSCalendarViewController.h */,
 				B6E3474318D2BDFB009507EC /* PWSCalendarViewController.m */,
 				B6E3472518D2BDB7009507EC /* Images.xcassets */,
+				B6B5E64618DAE554008F6745 /* Rescource */,
 				B6E3471418D2BDB7009507EC /* Supporting Files */,
 			);
 			path = PWSCalendar;
@@ -115,33 +171,6 @@
 				B6E3471B18D2BDB7009507EC /* PWSCalendar-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B6E3474518D2BE9C009507EC /* PWSCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				B6E3474918D2BEE0009507EC /* Helper */,
-				B6E3474618D2BEC8009507EC /* PWSCalendarView.h */,
-				B6E3474718D2BEC8009507EC /* PWSCalendarView.m */,
-				B6E3474D18D2BF7D009507EC /* PWSCalendarViewCell.h */,
-				B6E3474E18D2BF7D009507EC /* PWSCalendarViewCell.m */,
-				B6E3475018D2BF93009507EC /* PWSCalendarDayCell.h */,
-				B6E3475118D2BF93009507EC /* PWSCalendarDayCell.m */,
-			);
-			path = PWSCalendar;
-			sourceTree = "<group>";
-		};
-		B6E3474918D2BEE0009507EC /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				B6E3474A18D2BEF7009507EC /* PWSHelper.h */,
-				B6E3474B18D2BEF7009507EC /* PWSHelper.m */,
-				B6E3475918D2C32D009507EC /* PWSCalendarSegmentView.h */,
-				B6E3475A18D2C32D009507EC /* PWSCalendarSegmentView.m */,
-				B6E3475318D2BFBF009507EC /* PWSCalendarViewFlowLayout.h */,
-				B6E3475418D2BFBF009507EC /* PWSCalendarViewFlowLayout.m */,
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +227,7 @@
 			files = (
 				B6E3472618D2BDB7009507EC /* Images.xcassets in Resources */,
 				B6E3471818D2BDB7009507EC /* InfoPlist.strings in Resources */,
+				B6B5E64818DAE554008F6745 /* img1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,15 +238,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E3475B18D2C32D009507EC /* PWSCalendarSegmentView.m in Sources */,
 				B6E3474418D2BDFB009507EC /* PWSCalendarViewController.m in Sources */,
-				B6E3474C18D2BEF7009507EC /* PWSHelper.m in Sources */,
-				B6E3475218D2BF93009507EC /* PWSCalendarDayCell.m in Sources */,
-				B6E3475518D2BFBF009507EC /* PWSCalendarViewFlowLayout.m in Sources */,
+				B685AA3D18DAD415007812ED /* PWSCalendarSegmentView.m in Sources */,
+				B685AA4218DAD415007812ED /* PWSCalendarViewCell.m in Sources */,
+				B6B5E64518DAE4BD008F6745 /* PWSCustomViewController.m in Sources */,
+				B685AA4018DAD415007812ED /* PWSCalendarDayCell.m in Sources */,
+				B685AA4118DAD415007812ED /* PWSCalendarView.m in Sources */,
+				B6B5E64218DAE2AF008F6745 /* PWSDefaultViewController.m in Sources */,
+				B685AA3F18DAD415007812ED /* PWSHelper.m in Sources */,
 				B6E3471E18D2BDB7009507EC /* AppDelegate.m in Sources */,
+				B685AA3E18DAD415007812ED /* PWSCalendarViewFlowLayout.m in Sources */,
 				B6E3471A18D2BDB7009507EC /* main.m in Sources */,
-				B6E3474818D2BEC8009507EC /* PWSCalendarView.m in Sources */,
-				B6E3474F18D2BF7D009507EC /* PWSCalendarViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

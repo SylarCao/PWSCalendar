@@ -15,6 +15,8 @@
 @optional
 - (void) PWSCalendar:(PWSCalendarView*)_calendar didSelecteDate:(NSDate*)_date;
 
+//- (void) PWSCalendar:(PWSCalendarView*)_calendar didLoadView:(UIView*)_view;
+
 - (void) PWSCalendar:(PWSCalendarView*)_calendar didChangeViewHeight:(CGFloat)_height;
 
 @end
@@ -24,12 +26,10 @@
 
 @property (nonatomic, strong) id<PWSCalendarDelegate> delegate;
 @property (nonatomic, assign) enCalendarViewType      type;
-@property (nonatomic, assign) enCalendarViewHeaderViewType headType;
-@property (nonatomic, strong) UIView*                 customTimeView;
-@property (nonatomic, strong) UIView*                 customDataView;
+@property (nonatomic, strong) NSDate*                 dateShow;
 
 - (id) initWithFrame:(CGRect)frame CalendarType:(enCalendarViewType)pType;
 
-- (float) GetCalendarViewHeight __deprecated;
+- (float) GetCalendarViewHeight; //__deprecated;
 
 @end

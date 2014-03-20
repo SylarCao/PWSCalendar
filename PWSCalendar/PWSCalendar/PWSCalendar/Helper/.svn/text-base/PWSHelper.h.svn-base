@@ -20,12 +20,6 @@ typedef NS_ENUM(NSInteger, enCalendarViewType)
     en_calendar_type_month = 2,
 };
 ////////////////////////////////////////////////////////////////////
-typedef  NS_ENUM(NSInteger, enCalendarViewHeaderViewType)
-{
-    en_calendar_head_type_default = 1,
-    en_calendar_head_type_custom = 2,
-};
-////////////////////////////////////////////////////////////////////
 
 @interface PWSHelper : NSObject
 

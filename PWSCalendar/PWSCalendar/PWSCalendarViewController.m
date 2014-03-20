@@ -7,10 +7,13 @@
 //
 /////////////////////////////////////////////////////////////////////
 #import "PWSCalendarViewController.h"
-#import "PWSCalendarView.h"
+#import "PWSDefaultViewController.h"
+#import "PWSCustomViewController.h"
 /////////////////////////////////////////////////////////////////////
 @interface PWSCalendarViewController ()
-<PWSCalendarDelegate>
+{
+    
+}
 @end
 /////////////////////////////////////////////////////////////////////
 @implementation PWSCalendarViewController
@@ -41,14 +44,40 @@
 {
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
     
-    PWSCalendarView* view = [[PWSCalendarView alloc] initWithFrame:CGRectMake(0, 50, kSCREEN_WIDTH, 500) CalendarType:en_calendar_type_month];
-    [self.view addSubview:view];
-    [view setDelegate:self];
+    UIButton* b1 = [PWSCalendarViewController GetButtonWithTitle:@"default"];
+    [b1 setFrame:CGRectMake(100, 50, 100, 50)];
+    [b1 addTarget:self action:@selector(BtnToDefault) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:b1];
+    
+    UIButton* b2 = [PWSCalendarViewController GetButtonWithTitle:@"custom"];
+    [b2 setFrame:CGRectMake(100, 150, 100, 50)];
+    [b2 addTarget:self action:@selector(BtnToCustom) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:b2];
 }
 
-- (void) PWSCalendar:(PWSCalendarView*)_calendar didSelecteDate:(NSDate*)_date
+- (void) BtnToDefault
 {
-    
+    PWSDefaultViewController* dd = [[PWSDefaultViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:dd animated:YES];
+}
+
+- (void) BtnToCustom
+{
+    PWSCustomViewController* pp = [[PWSCustomViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:pp animated:YES];
+}
+
+
++ (UIButton*) GetButtonWithTitle:(NSString*)_pTitle
+{
+    UIButton* rt = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rt setTitle:_pTitle forState:UIControlStateNormal];
+    [rt.layer setBorderColor:[UIColor blueColor].CGColor];
+    [rt.layer setBorderWidth:2];
+    [rt.layer setCornerRadius:10];
+    [rt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [rt setTitleColor:[UIColor lightTextColor] forState:UIControlStateHighlighted];
+    return rt;
 }
 
 @end
