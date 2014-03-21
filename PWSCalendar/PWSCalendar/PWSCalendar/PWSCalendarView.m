@@ -458,9 +458,9 @@ UICollectionViewDelegate>
         NSArray* cells = [m_view_calendar visibleCells];
         for (PWSCalendarViewCell* each_cell in cells)
         {
+            each_cell.firstShow = YES;
             [each_cell setType:en_calendar_type_week];
         }
-        
     }
     else if (_index == 2)
     {
@@ -469,6 +469,7 @@ UICollectionViewDelegate>
         NSArray* cells = [m_view_calendar visibleCells];
         for (PWSCalendarViewCell* each_cell in cells)
         {
+            each_cell.firstShow = YES;
             [each_cell setType:en_calendar_type_month];
         }
     }
@@ -494,6 +495,23 @@ UICollectionViewDelegate>
 - (void) PWSCalendar:(PWSCalendarView *)_calendar didChangeViewHeight:(CGFloat)_height
 {
     float height = [self GetCalendarViewHeight];
+    
+    // change calendar height
+    float calendar_height = height-[self GetHeaderViewHeight];
+    CGRect calendar_frame = m_view_calendar.frame;
+    calendar_frame.size.height = calendar_height;
+    UICollectionViewFlowLayout* layout = (UICollectionViewFlowLayout*)m_view_calendar.collectionViewLayout;
+    CGSize flowlayout_size = layout.itemSize;
+    flowlayout_size.height = calendar_height;
+    layout.itemSize = flowlayout_size;
+    [m_view_calendar setFrame:calendar_frame];
+    
+    // set self height
+    CGRect frame_self = self.frame;
+    frame_self.size.height = height;
+    [self setFrame:frame_self];
+    
+    // callback delegate
     if ([self.delegate respondsToSelector:@selector(PWSCalendar:didChangeViewHeight:)])
     {
         [self.delegate PWSCalendar:self didChangeViewHeight:height];

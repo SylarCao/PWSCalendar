@@ -32,7 +32,7 @@ UICollectionViewDelegateFlowLayout>
     self = [super initWithFrame:frame];
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
-        
+        _firstShow = YES;
         self.type = en_calendar_type_month;
         m_calendar = [NSCalendar currentCalendar];
         m_first_date = [NSDate date];
@@ -44,6 +44,8 @@ UICollectionViewDelegateFlowLayout>
 - (void) SetInitialValue
 {
     PWSCalendarViewFlowLayout* layout = [[PWSCalendarViewFlowLayout alloc] init];
+    CGFloat itemWidth = floorf(CGRectGetWidth(self.bounds) / 7);
+    layout.itemSize = CGSizeMake(itemWidth, itemWidth/2);
     
     m_collection_view = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
     [self.contentView addSubview:m_collection_view];
@@ -69,9 +71,13 @@ UICollectionViewDelegateFlowLayout>
     [m_collection_view setFrame:collection_view_frame];
     
     // change view height
-    if ([self.delegate respondsToSelector:@selector(PWSCalendar:didChangeViewHeight:)])
+    if (_firstShow)
     {
-        [self.delegate performSelector:@selector(PWSCalendar:didChangeViewHeight:) withObject:nil withObject:nil];
+        if ([self.delegate respondsToSelector:@selector(PWSCalendar:didChangeViewHeight:)])
+        {
+            [self.delegate performSelector:@selector(PWSCalendar:didChangeViewHeight:) withObject:nil withObject:nil];
+        }
+        _firstShow = NO;
     }
 }
 
@@ -134,6 +140,7 @@ UICollectionViewDelegateFlowLayout>
         self.calendarHeight = itemHeight;
         rt = 7;
     }
+
     [self ResetSelfFrame];
     return rt;
 }
@@ -187,13 +194,13 @@ UICollectionViewDelegateFlowLayout>
 
 
 #pragma mark - UICollectionViewFlowLayoutDelegate
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    CGFloat itemWidth = floorf(CGRectGetWidth(m_collection_view.bounds) / 7);
-    
-    return CGSizeMake(itemWidth, itemWidth/2);
-}
+//
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    CGFloat itemWidth = floorf(CGRectGetWidth(m_collection_view.bounds) / 7);
+//    
+//    return CGSizeMake(itemWidth, itemWidth/2);
+//}
 
 
 @end
