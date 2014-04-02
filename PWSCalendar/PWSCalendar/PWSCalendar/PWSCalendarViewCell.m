@@ -188,7 +188,17 @@ UICollectionViewDelegateFlowLayout>
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDate* selected_date = [self dateForCellAtIndexPath:indexPath];
-    BOOL rt = [PWSHelper CheckSameMonth:selected_date AnotherMonth:m_first_date];
+    
+    enCalendarViewType type = [(PWSCalendarView *)_delegate type];
+    BOOL rt = NO;
+    if (type == en_calendar_type_month)
+    {
+        rt = [PWSHelper CheckSameMonth:selected_date AnotherMonth:m_first_date];
+    }
+    else if (type == en_calendar_type_week)
+    {
+        rt = YES;
+    }
     return rt;
 }
 
